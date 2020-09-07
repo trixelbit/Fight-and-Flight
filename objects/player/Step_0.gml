@@ -20,7 +20,7 @@ if(keyboard_check_pressed(vk_space))
 }
 
 
-background_drawer.scroll_speed = lerp(background_drawer.scroll_speed, 8, .08);
+
 
 
 x = lerp(x, target_x, .2);
