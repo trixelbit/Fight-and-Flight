@@ -10,11 +10,11 @@ background = function(_sprite, _xpercent, _ypercent) constructor
 }
 
 backgrounds = array_create(5);
-backgrounds[0] = new background(bg0, -.5, .01);
-backgrounds[1] = new background(bg1, -.10, .02);
-backgrounds[2] = new background(bg1, -.20, .04);
-backgrounds[3] = new background(bg1, -.40, .08);
-backgrounds[4] = new background(bg4, -3, .05);
+backgrounds[0] = new background(bg0, -.01, .005);
+backgrounds[1] = new background(bg1, -.05, .01);
+backgrounds[2] = new background(bg2, -.20, .02);
+backgrounds[3] = new background(bg3, -.40, .04);
+backgrounds[4] = new background(bg4, -3, .06);
 
-scroll_speed = 1;
+scroll_speed = 8;
 
