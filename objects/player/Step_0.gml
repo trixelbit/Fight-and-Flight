@@ -22,7 +22,7 @@ if(keyboard_check_pressed(vk_space))
 
 
 
-
+image_angle = lerp(image_angle, 0, .2);
 x = lerp(x, target_x, .2);
 y = lerp(y, target_y, .2);
 
