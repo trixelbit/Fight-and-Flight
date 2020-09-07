@@ -11,6 +11,18 @@ if(keyboard_check_pressed(vk_down))
 	move_down();
 }
 
+
+
+if(keyboard_check_pressed(vk_space))
+{
+	
+	background_drawer.scroll_speed = 16;
+}
+
+
+background_drawer.scroll_speed = lerp(background_drawer.scroll_speed, 8, .1);
+
+
 x = lerp(x, target_x, .2);
 y = lerp(y, target_y, .2);
 
