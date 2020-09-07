@@ -7,6 +7,7 @@ target_x = x;
 target_y = y;
 lane = 1;
 scroll_speed = 0;
+invulnerable = false;
 
 sprite = 
 {
