@@ -1,6 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+instance_create_layer(x - 25, y + 2, "Instances_1", smoke);
+
+
 if (keyboard_check_pressed(vk_up))
 {
 	move_up();
@@ -13,7 +16,7 @@ if(keyboard_check_pressed(vk_down))
 
 
 
-if(keyboard_check_pressed(vk_space) and is_position_snapped and !attack)
+if(keyboard_check_pressed(vk_space) and !attack)
 {
 	dash_attack();
 }
@@ -28,7 +31,7 @@ if(attack)
 	else
 	{
 		instance_create_layer(x,y, "Instances_1", ghost);
-		image_speed = 3;
+		image_speed = 5;
 		
 		//background_drawer.scroll_speed = background_drawer.og_scroll_speed + 10;
 		x += 32;

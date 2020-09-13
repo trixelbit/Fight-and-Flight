@@ -23,9 +23,16 @@ sprite =
 // actions
 move_up = function ()
 {
-	if (lane == 0 or attack)
+	if (lane == 0)
 	{
 		return -1;
+	}
+	else if(attack)
+	{
+		lane--;
+		target_y--;
+		target_y -= grid_snap;
+		return 0;
 	}
 	else
 	{
@@ -41,9 +48,16 @@ move_up = function ()
 
 move_down = function ()
 {
-	if (lane == 2 or attack)
+	if (lane == 2)
 	{
 		return -1;
+	}
+	else if(attack)
+	{
+		lane++;
+		target_y++;
+		target_y += grid_snap;
+		return 0;
 	}
 	else
 	{
@@ -63,6 +77,7 @@ dash_attack = function ()
 	
 	attack =  true;
 	sprite_index = spr_player_attack;
+	image_index = 6;
 	image_speed =  8;
 	
 	
