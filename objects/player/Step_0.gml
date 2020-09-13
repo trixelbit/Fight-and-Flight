@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-instance_create_layer(x - 25, y + 2, "Instances_1", smoke);
+instance_create_layer(x - 25, y + 2, "BackgroundEffects", smoke);
 
 
 if (keyboard_check_pressed(vk_up))
@@ -30,7 +30,7 @@ if(attack)
 	}
 	else
 	{
-		instance_create_layer(x,y, "Instances_1", ghost);
+		instance_create_layer(x,y, "BackgroundEffects", ghost);
 		image_speed = 5;
 		
 		//background_drawer.scroll_speed = background_drawer.og_scroll_speed + 10;

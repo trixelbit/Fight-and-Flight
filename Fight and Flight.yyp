@@ -20,6 +20,8 @@
     {"id":{"name":"ui_lives","path":"objects/ui_lives/ui_lives.yy",},"order":4,},
     {"id":{"name":"background_drawer","path":"objects/background_drawer/background_drawer.yy",},"order":1,},
     {"id":{"name":"Sprite13","path":"sprites/Sprite13/Sprite13.yy",},"order":4,},
+    {"id":{"name":"mouse_input","path":"objects/mouse_input/mouse_input.yy",},"order":9,},
+    {"id":{"name":"spr_laneclickbox","path":"sprites/spr_laneclickbox/spr_laneclickbox.yy",},"order":5,},
     {"id":{"name":"bg3","path":"sprites/bg3/bg3.yy",},"order":3,},
     {"id":{"name":"spr_heart","path":"sprites/spr_heart/spr_heart.yy",},"order":0,},
     {"id":{"name":"spawner","path":"objects/spawner/spawner.yy",},"order":3,},
