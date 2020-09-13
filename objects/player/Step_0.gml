@@ -13,26 +13,57 @@ if(keyboard_check_pressed(vk_down))
 
 
 
-if(keyboard_check_pressed(vk_space))
+if(keyboard_check_pressed(vk_space) and is_position_snapped and !attack)
 {
-	
-	background_drawer.scroll_speed = 25;
+	dash_attack();
 }
 
 
+if(attack)
+{
+	if(image_index < 6)
+	{
+
+	}
+	else
+	{
+		instance_create_layer(x,y, "Instances_1", ghost);
+		image_speed = 3;
+		
+		//background_drawer.scroll_speed = background_drawer.og_scroll_speed + 10;
+		x += 32;
+		attack_invuln = true;
+		
+		
+		if( image_index >= 9 )
+		{
+			sprite_index = sprite.idle;
+			image_speed = 1;
+
+			attack_invuln = false;
+			attack = false;
+		}
+	}
+}
 
 
 image_angle = lerp(image_angle, 0, .2);
-x = lerp(x, target_x, .2);
-y = lerp(y, target_y, .2);
+x = lerp(x, target_x, .05);
+y = lerp(y, target_y, .4);
 
 
 // check if position snapped
-if(abs(x - target_x) < 3 and abs(y - target_y) < 3 )
+if( abs(y - target_y) < 5 )
 {
 	is_position_snapped = true;
-	sprite_index = sprite.idle;
-	image_speed = 1;
+	y = target_y;
+	
+	if(!attack)
+	{
+		sprite_index = sprite.idle;
+		image_speed = 1;
+	}
+	
 }
 else
 {

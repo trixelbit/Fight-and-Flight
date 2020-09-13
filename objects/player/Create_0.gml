@@ -8,18 +8,22 @@ target_y = y;
 lane = 1;
 scroll_speed = 0;
 invulnerable = false;
+attack_invuln = false;
+attack = false;
 
 sprite = 
 {
 	idle : spr_player_idle,
 	up : spr_player_up,
-	down : spr_player_down
+	down : spr_player_down,
+	attack : spr_player_attack
+	
 };
 
 // actions
 move_up = function ()
 {
-	if (lane == 0)
+	if (lane == 0 or attack)
 	{
 		return -1;
 	}
@@ -29,7 +33,7 @@ move_up = function ()
 		target_y--;
 		target_y -= grid_snap;
 		sprite_index = sprite.up;
-		image_speed = 2;
+		image_speed = 1;
 		image_index = 0;
 		return 0;
 	}
@@ -37,7 +41,7 @@ move_up = function ()
 
 move_down = function ()
 {
-	if (lane == 2)
+	if (lane == 2 or attack)
 	{
 		return -1;
 	}
@@ -47,12 +51,22 @@ move_down = function ()
 		target_y++;
 		target_y += grid_snap;
 		sprite_index = sprite.down;
-		image_speed = 2;
+		image_speed = 1;
 		image_index = 0;
 		return 0;
 	}
 }
 
+dash_attack = function ()
+{
+	
+	
+	attack =  true;
+	sprite_index = spr_player_attack;
+	image_speed =  8;
+	
+	
+}
 
 
 
