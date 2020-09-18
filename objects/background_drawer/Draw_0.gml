@@ -8,9 +8,6 @@ for(i = 0; i < 5; i++)
 	
 	current_bg.yoffset += scroll_speed * current_bg.percent_y;
 	
-	
-	
-	
 	draw_sprite(current_bg.sprite , 0, 
 		camera_get_view_x( view_get_camera(view_camera[0])) + current_bg.xoffset,  
 		camera_get_view_y( view_get_camera(view_camera[0])) + current_bg.yoffset
@@ -23,7 +20,25 @@ for(i = 0; i < 5; i++)
 		camera_get_view_x( view_get_camera(view_camera[0])) + current_bg.xoffset - 480,  
 		camera_get_view_y( view_get_camera(view_camera[0])) + current_bg.yoffset
 		);
-	
-	
-	
 }
+var current_color = draw_getpixel(room_width/2, room_height/2);
+color =  make_color_hsv
+(
+	lerp(color_get_hue(color), color_get_hue(current_color), .1 ),
+	lerp(color_get_saturation(color), color_get_saturation(current_color), .1 ),
+	lerp(color_get_value(color), color_get_value(current_color), .1 )
+)
+
+
+gpu_set_blendmode(bm_add);
+draw_set_alpha(.1);
+draw_set_color( color);
+draw_rectangle( 
+	camera_get_view_x( view_get_camera(view_camera[0])), 
+	camera_get_view_y( view_get_camera(view_camera[0])),
+	room_width,
+	room_height,
+	0);
+
+gpu_set_blendmode(bm_normal);
+draw_set_alpha(1);
