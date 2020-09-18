@@ -16,6 +16,6 @@ backgrounds[2] = new background(bg2, -.20, .02);
 backgrounds[3] = new background(bg3, -.40, .04);
 backgrounds[4] = new background(bg4, -3, .06);
 
-scroll_speed = 6;
+scroll_speed = 1;
 og_scroll_speed = scroll_speed;
 

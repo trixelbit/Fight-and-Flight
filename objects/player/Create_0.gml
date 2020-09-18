@@ -2,7 +2,6 @@
 
 // player data
 is_position_snapped = false;
-grid_snap = 64;
 target_x = x;
 target_y = y;
 lane = 1;
@@ -31,14 +30,14 @@ move_up = function ()
 	{
 		lane--;
 		target_y--;
-		target_y -= grid_snap;
+		target_y -= global.grid_snap;
 		return 0;
 	}
 	else
 	{
 		lane--;
 		target_y--;
-		target_y -= grid_snap;
+		target_y -= global.grid_snap;
 		sprite_index = sprite.up;
 		image_speed = 1;
 		image_index = 0;
@@ -56,14 +55,14 @@ move_down = function ()
 	{
 		lane++;
 		target_y++;
-		target_y += grid_snap;
+		target_y += global.grid_snap;
 		return 0;
 	}
 	else
 	{
 		lane++;
 		target_y++;
-		target_y += grid_snap;
+		target_y += global.grid_snap;
 		sprite_index = sprite.down;
 		image_speed = 1;
 		image_index = 0;

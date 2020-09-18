@@ -37,7 +37,6 @@ if(attack)
 		x += 32;
 		attack_invuln = true;
 		
-		
 		if( image_index >= 9 )
 		{
 			sprite_index = sprite.idle;
@@ -66,7 +65,7 @@ if( abs(y - target_y) < 5 )
 		sprite_index = sprite.idle;
 		image_speed = 1;
 	}
-	
+
 }
 else
 {
