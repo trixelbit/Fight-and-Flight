@@ -1,5 +1,5 @@
 /// @description Insert description here
-
+score = 0;
 // player data
 is_position_snapped = false;
 target_x = x;
@@ -22,7 +22,7 @@ sprite =
 // actions
 move_up = function ()
 {
-	if (lane == 0)
+	if (lane == 0 or !is_position_snapped)
 	{
 		return -1;
 	}
@@ -47,7 +47,7 @@ move_up = function ()
 
 move_down = function ()
 {
-	if (lane == 2)
+	if (lane == 2 or !is_position_snapped)
 	{
 		return -1;
 	}

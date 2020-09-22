@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-touch_threshold = 32
+touch_threshold = 8;
 counter = 0;
 
 

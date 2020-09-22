@@ -1,70 +1,50 @@
 
-/*
+
 for(var i = 0; i < 1; i++ )
 {
-	if (device_mouse_check_button(i, mb_left))
+	if(device_mouse_check_button_pressed(i, mb_left))
 	{
-		if( counter < global.gesture_time_frame )
-		{
-			inputs[i].update(i);
-			counter++
-		}
-		else
-		{
-			inputs[i].update(i);
-			counter = 0;
-		}
-		
+		inputs[i].active = true;
 	}
-	else
+	else if(device_mouse_check_button_released(i, mb_left))
 	{
 		inputs[i].reset();
-	}
-	
-	if(inputs[i].delta_y < -touch_threshold)
-	{
-		with(player)
-		{
-			move_up();
-		}
-	}
-	else if (inputs[i].delta_y > touch_threshold)
-	{
-		with(player)
-		{
-			move_down();
-		}
-	}
-}
-
-
-
-
-/*
-if(  )
-{
-	if(device_mouse_y(0) <  player.y - touch_threshold )
-	{
-		with(player)
-		{
-
-			move_up();
-
-		}
-	}
-	else if (device_mouse_y(0) >  player.y + touch_threshold)
-	{
-		with(player)
-		{
-
-			move_down();
-
-		}
 		
 	}
-	
+		
+	if (device_mouse_check_button(i, mb_left))
+	{
+		inputs[i].update(i);
+	}
+
 }
 
+
+if(inputs[0].active)
+{
+
+
+	if(inputs[0].y_speed < -touch_threshold )
+	{
+		with(player)
+		{
+			move_up();		
+		}
+		inputs[0].reset();
+	}
+	else if (inputs[0].y_speed > touch_threshold )
+	{
+		with(player)
+		{
+			move_down();
+		}
+	
+		inputs[0].reset();	
+	}
+}
+	
+
+/*
 
 if (device_mouse_check_button_pressed(0, mb_right) and !player.attack)
 {
@@ -74,5 +54,4 @@ if (device_mouse_check_button_pressed(0, mb_right) and !player.attack)
 
 	}
 }
-/// @description Insert description here
-// You can write your code in this editor
+

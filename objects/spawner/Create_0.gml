@@ -78,13 +78,21 @@ spawn_frame = function()
 					}
 				}
 				else
-				{}
+				{
+					if(instance_number(coin_spawner) = 0)
+					{
+						var i = instance_create_layer(x, y, "Enemies", coin_spawner);
+						i.alarm[2] = random_range(60, 240);
+					}					
+				}
 			}
 		}
 	}
 	else if(active)
 	{
 		active = false;
+		var i = instance_create_layer(x, y, "Enemies", coin_spawner);
+		i.alarm[2] = random_range(60, 240);
 	}
 	else if ( total_spawned < 1)
 	{
