@@ -19,18 +19,19 @@ function touch_input() constructor
 		{
 			if(counter < global.gesture_time_frame)
 			{
-				_x = device_mouse_x(device_number);
-				_y = device_mouse_y(device_number);
-				delta_x = _x - x_start ;
-				delta_y = _y - y_start;
-				x_speed = delta_x/counter;
-				y_speed = delta_y/counter;
-		
+				
 				if(counter == 1)
 				{
 					x_start = device_mouse_x(device_number);
 					y_start = device_mouse_y(device_number);
 				}
+				_x = device_mouse_x(device_number);
+				_y = device_mouse_y(device_number);
+				delta_x = _x - x_start;
+				delta_y = _y - y_start;
+				x_speed = delta_x/counter;
+				y_speed = delta_y/counter;
+				
 			
 				counter++;
 			}
