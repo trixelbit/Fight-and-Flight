@@ -7,7 +7,7 @@ minutes = 0
 function digit() constructor
 {
 	//static variables
-	start_scale = 1;
+	start_scale = 2;
 	start_angle = 0;
 	
 	
@@ -15,6 +15,7 @@ function digit() constructor
 	xscale = 1;
 	yscale = 1;
 	angle = 0;
+	
 	
 	function update(_value)
 	{
