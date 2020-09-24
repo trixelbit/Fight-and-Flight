@@ -101,7 +101,7 @@ spawn_frame = function()
 	else
 	{
 		total_spawned -= 15;
-		background_drawer.og_scroll_speed += .05;
+		background_drawer.og_scroll_speed += .1;
 	}
 }
 

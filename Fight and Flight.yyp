@@ -1,6 +1,7 @@
 {
   "resources": [
     {"id":{"name":"bg0","path":"sprites/bg0/bg0.yy",},"order":0,},
+    {"id":{"name":"s_hit","path":"sounds/s_hit/s_hit.yy",},"order":2,},
     {"id":{"name":"spr_spark1","path":"sprites/spr_spark1/spr_spark1.yy",},"order":0,},
     {"id":{"name":"spr_coin","path":"sprites/spr_coin/spr_coin.yy",},"order":0,},
     {"id":{"name":"h_lazer","path":"objects/h_lazer/h_lazer.yy",},"order":10,},
