@@ -7,10 +7,23 @@ alpha = 1;
 
 //hundreds
 alpha = score > 99 ? 1 : 0;
-draw_sprite_ext(spr_numbers, hundreds.value, (room_width * 2) - (32 * 3), 32, hundreds.xscale, hundreds.yscale, hundreds.angle, image_blend, alpha);
+draw_sprite_ext(spr_numbers, hundreds.value, (room_width * 2) - (32 * 3) - score_xoffset, 32, hundreds.xscale, hundreds.yscale, hundreds.angle, image_blend, alpha);
 // tens
 alpha = score > 9 ? 1 : 0;
-draw_sprite_ext(spr_numbers, tens.value, (room_width * 2) - (32 * 2), 32, tens.xscale, tens.yscale, tens.angle, image_blend, alpha);
+draw_sprite_ext(spr_numbers, tens.value, (room_width * 2) - (32 * 2) - score_xoffset, 32, tens.xscale, tens.yscale, tens.angle, image_blend, alpha);
 //singles
 alpha = 1;
-draw_sprite_ext(spr_numbers, ones.value, (room_width * 2) - (32 * 1), 32, ones.xscale, ones.yscale, ones.angle, image_blend, alpha);
+draw_sprite_ext(spr_numbers, ones.value, (room_width * 2) - (32 * 1) - score_xoffset, 32, ones.xscale, ones.yscale, ones.angle, image_blend, alpha);
+
+
+for( i = -1; i < 2; i++ )
+{
+	draw_sprite_ext(spr_heart, 0 , (room_width) + (64 * i), 32, 2.2, 2.2, 0, c_black, 1);
+}
+for( i = -1; i < lives - 1; i++ )
+{
+	var _x_offset = floor(random_range(0,.99) * (3 / lives));
+	var _y_offset = floor(random_range(0,.99) * (3 / lives));
+	draw_sprite_ext(spr_heart, 0 , (room_width) + (64 * i) + _x_offset, 32 + _y_offset, 2, 2, 0, c_white, 1);
+	
+}

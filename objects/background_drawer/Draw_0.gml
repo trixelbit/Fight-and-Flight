@@ -30,6 +30,9 @@ for(i = 0; i < 5; i++)
 		);
 		
 }
+
+
+// adjust background color
 var current_color = draw_getpixel(room_width/2, room_height/2);
 color =  make_color_hsv
 (
