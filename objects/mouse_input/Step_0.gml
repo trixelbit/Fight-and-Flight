@@ -28,6 +28,7 @@ if(inputs[0].active)
 		{
 			move_up();		
 		}
+		inputs[0].reset();
 
 	}
 	else if (inputs[0].y_speed > touch_threshold )
@@ -36,6 +37,7 @@ if(inputs[0].active)
 		{
 			move_down();
 		}
+		inputs[0].reset();
 	}
 }
 	

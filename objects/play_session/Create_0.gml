@@ -3,6 +3,7 @@
 frame_count = 0
 seconds = 0
 minutes = 0
+audio_play_sound(m_theme,100,1);
 
 function digit() constructor
 {

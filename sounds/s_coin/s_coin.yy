@@ -10,14 +10,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "",
-  "duration": 0.0,
+  "soundFile": "s_coin.wav",
+  "duration": 0.481667,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Sound1",
+  "name": "s_coin",
   "tags": [],
   "resourceType": "GMSound",
 }
