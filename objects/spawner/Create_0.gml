@@ -94,16 +94,19 @@ spawn_frame = function()
 		var i = instance_create_layer(x, y, "Enemies", coin_spawner);
 		i.alarm[2] = random_range(60, 240);
 		speedlines.active = true;
+		audio_play_sound(s_enginespeedup,50, 0);
+		audio_play_sound(s_letpickupthepace,50, 0);
 	}
 	else if ( total_spawned < 1)
 	{
 		active = true;
 		speedlines.active = false;
+		
 	}
 	else
 	{
 		total_spawned -= 15;
-		background_drawer.og_scroll_speed += .1;
+		background_drawer.og_scroll_speed += .12;
 		
 	}
 }

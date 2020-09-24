@@ -1,5 +1,7 @@
 {
   "resources": [
+    {"id":{"name":"s_enginespeedup","path":"sounds/s_enginespeedup/s_enginespeedup.yy",},"order":3,},
+    {"id":{"name":"s_letpickupthepace","path":"sounds/s_letpickupthepace/s_letpickupthepace.yy",},"order":4,},
     {"id":{"name":"bg0","path":"sprites/bg0/bg0.yy",},"order":0,},
     {"id":{"name":"s_hit","path":"sounds/s_hit/s_hit.yy",},"order":2,},
     {"id":{"name":"spr_spark1","path":"sprites/spr_spark1/spr_spark1.yy",},"order":0,},
@@ -11,6 +13,7 @@
     {"id":{"name":"spr_player_up","path":"sprites/spr_player_up/spr_player_up.yy",},"order":2,},
     {"id":{"name":"smoke","path":"objects/smoke/smoke.yy",},"order":8,},
     {"id":{"name":"particle","path":"objects/particle/particle.yy",},"order":5,},
+    {"id":{"name":"heart","path":"objects/heart/heart.yy",},"order":16,},
     {"id":{"name":"bg2","path":"sprites/bg2/bg2.yy",},"order":4,},
     {"id":{"name":"spr_speedline","path":"sprites/spr_speedline/spr_speedline.yy",},"order":7,},
     {"id":{"name":"spr_smoke","path":"sprites/spr_smoke/spr_smoke.yy",},"order":1,},
@@ -25,6 +28,7 @@
     {"id":{"name":"ghost","path":"objects/ghost/ghost.yy",},"order":6,},
     {"id":{"name":"enemy","path":"objects/enemy/enemy.yy",},"order":2,},
     {"id":{"name":"bg4","path":"sprites/bg4/bg4.yy",},"order":2,},
+    {"id":{"name":"s_getheart","path":"sounds/s_getheart/s_getheart.yy",},"order":5,},
     {"id":{"name":"spr_enemy","path":"sprites/spr_enemy/spr_enemy.yy",},"order":0,},
     {"id":{"name":"ui_lives","path":"objects/ui_lives/ui_lives.yy",},"order":4,},
     {"id":{"name":"background_drawer","path":"objects/background_drawer/background_drawer.yy",},"order":1,},
