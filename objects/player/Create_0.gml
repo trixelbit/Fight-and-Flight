@@ -10,6 +10,9 @@ invulnerable = false;
 attack_invuln = false;
 attack = false;
 
+audio_play_sound(s_engine_idle, 1, 1);
+
+
 sprite = 
 {
 	idle : spr_player_idle,
@@ -31,6 +34,7 @@ move_up = function ()
 		lane--;
 		target_y--;
 		target_y -= global.grid_snap;
+		audio_play_sound(s_engine_gas, 10, 0);
 		return 0;
 	}
 	else
@@ -41,6 +45,7 @@ move_up = function ()
 		sprite_index = sprite.up;
 		image_speed = 1;
 		image_index = 0;
+		audio_play_sound(s_engine_gas, 10, 0);
 		return 0;
 	}
 }
@@ -56,6 +61,7 @@ move_down = function ()
 		lane++;
 		target_y++;
 		target_y += global.grid_snap;
+		audio_play_sound(s_engine_gas, 10, 0);
 		return 0;
 	}
 	else
@@ -66,6 +72,7 @@ move_down = function ()
 		sprite_index = sprite.down;
 		image_speed = 1;
 		image_index = 0;
+		audio_play_sound(s_engine_gas, 10, 0);
 		return 0;
 	}
 }
