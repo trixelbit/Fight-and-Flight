@@ -16,9 +16,9 @@ if(keyboard_check_pressed(vk_down))
 
 
 
-if(keyboard_check_pressed(vk_space) and !attack)
+if(keyboard_check_pressed(vk_space))
 {
-	dash_attack();
+	move_dodge();
 }
 
 
@@ -48,6 +48,25 @@ if(attack)
 	}
 }
 
+if(dodge)
+{
+	image_alpha = .9;
+	image_xscale = lerp(image_xscale, 1.5, .1);
+	image_yscale = image_xscale;
+	
+	if(image_index > 10)
+	{
+		dodge = false;
+	}
+}
+else
+{
+
+	image_xscale = lerp(image_xscale, 1, .1);
+	image_yscale = image_xscale;
+	image_alpha = 1;
+
+}
 
 image_angle = lerp(image_angle, 0, .2);
 x = lerp(x, target_x, .05);
@@ -60,7 +79,7 @@ if( abs(y - target_y) < 5 )
 	is_position_snapped = true;
 	y = target_y;
 	
-	if(!attack)
+	if(!attack and !dodge)
 	{
 		sprite_index = sprite.idle;
 		image_speed = 1;

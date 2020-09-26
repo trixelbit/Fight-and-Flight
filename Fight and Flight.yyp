@@ -38,7 +38,7 @@
     {"id":{"name":"background_drawer","path":"objects/background_drawer/background_drawer.yy",},"order":1,},
     {"id":{"name":"s_coin","path":"sounds/s_coin/s_coin.yy",},"order":0,},
     {"id":{"name":"spr_lazer_h_2","path":"sprites/spr_lazer_h_2/spr_lazer_h_2.yy",},"order":2,},
-    {"id":{"name":"Sprite13","path":"sprites/Sprite13/Sprite13.yy",},"order":4,},
+    {"id":{"name":"spr_player_dodge","path":"sprites/spr_player_dodge/spr_player_dodge.yy",},"order":4,},
     {"id":{"name":"spr_numbers","path":"sprites/spr_numbers/spr_numbers.yy",},"order":1,},
     {"id":{"name":"coin_spawner","path":"objects/coin_spawner/coin_spawner.yy",},"order":14,},
     {"id":{"name":"mouse_input","path":"objects/mouse_input/mouse_input.yy",},"order":9,},
