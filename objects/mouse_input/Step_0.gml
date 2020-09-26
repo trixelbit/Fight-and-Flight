@@ -39,6 +39,15 @@ if(inputs[0].active)
 		}
 		inputs[0].reset();
 	}
+	else if (inputs[0].x_speed > touch_threshold)
+	{
+		with(player)
+		{
+			move_dodge();
+			
+		}
+		inputs[0].reset();
+	}
 }
 	
 
