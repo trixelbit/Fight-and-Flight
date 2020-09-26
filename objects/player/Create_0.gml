@@ -34,6 +34,7 @@ move_up = function ()
 		lane--;
 		target_y--;
 		target_y -= global.grid_snap;
+		instance_create_layer(x,y,"FX", smoke_burst);
 		audio_play_sound(s_engine_gas, 10, 0);
 		return 0;
 	}
@@ -45,6 +46,7 @@ move_up = function ()
 		sprite_index = sprite.up;
 		image_speed = 1;
 		image_index = 0;
+		instance_create_layer(x,y,"FX", smoke_burst);
 		audio_play_sound(s_engine_gas, 10, 0);
 		return 0;
 	}
@@ -62,6 +64,8 @@ move_down = function ()
 		target_y++;
 		target_y += global.grid_snap;
 		audio_play_sound(s_engine_gas, 10, 0);
+		var _i = instance_create_layer(x,y + 16,"FX", smoke_burst);
+		_i.image_yscale = -1;
 		return 0;
 	}
 	else
@@ -73,6 +77,8 @@ move_down = function ()
 		image_speed = 1;
 		image_index = 0;
 		audio_play_sound(s_engine_gas, 10, 0);
+		var _i = instance_create_layer(x,y + 16,"FX", smoke_burst);
+		_i.image_yscale = -1;
 		return 0;
 	}
 }
