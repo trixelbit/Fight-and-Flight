@@ -5,10 +5,36 @@ seconds = (frame_count mod 30);
 minutes = frame_count mod  1800;
 
 
-ones.update(score mod 10);
-tens.update(score > 9 ? floor((score mod 100) / 10) : 0);
-hundreds.update(score > 99 ? floor((score mod 1000) / 100) : 0);
-thousands.update(score > 999 ? floor((score mod 10000) / 1000)  : 0);
+if(lives <= 0)
+{
+	ones.xscale = lerp(ones.xscale, max_scale, lerp_speed);
+	ones.yscale = ones.xscale;
+	ones.x = (room_width) - (32 * 1 * ones.xscale / 4);
+	ones.y = lerp(ones.y, room_height, lerp_speed);
 
+	tens.xscale = lerp(tens.xscale, max_scale, lerp_speed);
+	tens.yscale = tens.xscale;
+	tens.x = (room_width) - (32 * 3 * tens.xscale / 4);
+	tens.y = lerp(tens.y, room_height, lerp_speed);
+	
+	hundreds.xscale = lerp(hundreds.xscale, max_scale, lerp_speed);
+	hundreds.yscale = hundreds.xscale;
+	hundreds.x = (room_width) - (32 * 3 * hundreds.xscale / 4);
+	hundreds.y = lerp(hundreds.y, room_height, lerp_speed);
+
+	thousands.xscale = lerp(thousands.xscale, max_scale, lerp_speed);
+	thousands.yscale = thousands.xscale;
+	thousands.x = (room_width) - (32 * max_scale * thousands.xscale / 4);
+	thousands.y = lerp(thousands.y, room_height, lerp_speed);
+
+	
+}
+else
+{
+	ones.update(score mod 10);
+	tens.update(score > 9 ? floor((score mod 100) / 10) : 0);
+	hundreds.update(score > 99 ? floor((score mod 1000) / 100) : 0);
+	thousands.update(score > 999 ? floor((score mod 10000) / 1000)  : 0);
+}
 
 

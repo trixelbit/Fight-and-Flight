@@ -7,13 +7,13 @@ alpha = 1;
 
 //hundreds
 alpha = score > 99 ? 1 : 0;
-draw_sprite_ext(spr_numbers, hundreds.value, (room_width * 2) - (32 * 3) - score_xoffset, 32, hundreds.xscale, hundreds.yscale, hundreds.angle, image_blend, alpha);
+draw_sprite_ext(spr_numbers, hundreds.value, hundreds.x, hundreds.y, hundreds.xscale, hundreds.yscale, hundreds.angle, image_blend, alpha);
 // tens
 alpha = score > 9 ? 1 : 0;
-draw_sprite_ext(spr_numbers, tens.value, (room_width * 2) - (32 * 2) - score_xoffset, 32, tens.xscale, tens.yscale, tens.angle, image_blend, alpha);
+draw_sprite_ext(spr_numbers, tens.value, tens.x, tens.y, tens.xscale, tens.yscale, tens.angle, image_blend, alpha);
 //singles
 alpha = 1;
-draw_sprite_ext(spr_numbers, ones.value, (room_width * 2) - (32 * 1) - score_xoffset, 32, ones.xscale, ones.yscale, ones.angle, image_blend, alpha);
+draw_sprite_ext(spr_numbers, ones.value, ones.x , ones.y, ones.xscale, ones.yscale, ones.angle, image_blend, alpha);
 
 
 for( i = -1; i < 2; i++ )

@@ -10,6 +10,7 @@ invulnerable = false;
 attack_invuln = false;
 attack = false;
 dodge = false;
+dead = false;
 
 audio_play_sound(s_engine_idle, 1, 1);
 
@@ -27,7 +28,7 @@ sprite =
 // actions
 move_up = function ()
 {
-	if (lane == 0 or !is_position_snapped or dodge)
+	if (lane == 0 or !is_position_snapped or dodge or dead)
 	{
 		return -1;
 	}
@@ -56,7 +57,7 @@ move_up = function ()
 
 move_down = function ()
 {
-	if (lane == 2 or !is_position_snapped or dodge)
+	if (lane == 2 or !is_position_snapped or dodge or dead)
 	{
 		return -1;
 	}
@@ -87,7 +88,7 @@ move_down = function ()
 
 move_dodge = function ()
 {
-	if(is_position_snapped and !dodge)
+	if(is_position_snapped and !dodge and !dead)
 	{
 		dodge = true;
 		sprite_index = sprite.dodge;
