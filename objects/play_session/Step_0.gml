@@ -9,22 +9,22 @@ if(lives <= 0)
 {
 	ones.xscale = lerp(ones.xscale, max_scale, lerp_speed);
 	ones.yscale = ones.xscale;
-	ones.x = (room_width) - (32 * 1 * ones.xscale / 4);
+	ones.x = (room_width) - (32 * 1 * ones.xscale / 2);
 	ones.y = lerp(ones.y, room_height, lerp_speed);
 
 	tens.xscale = lerp(tens.xscale, max_scale, lerp_speed);
 	tens.yscale = tens.xscale;
-	tens.x = (room_width) - (32 * 3 * tens.xscale / 4);
+	tens.x = (room_width) - (32 * 2 * tens.xscale / 2);
 	tens.y = lerp(tens.y, room_height, lerp_speed);
 	
 	hundreds.xscale = lerp(hundreds.xscale, max_scale, lerp_speed);
 	hundreds.yscale = hundreds.xscale;
-	hundreds.x = (room_width) - (32 * 3 * hundreds.xscale / 4);
+	hundreds.x = (room_width) - (32 * 3 * hundreds.xscale / 2);
 	hundreds.y = lerp(hundreds.y, room_height, lerp_speed);
 
 	thousands.xscale = lerp(thousands.xscale, max_scale, lerp_speed);
 	thousands.yscale = thousands.xscale;
-	thousands.x = (room_width) - (32 * max_scale * thousands.xscale / 4);
+	thousands.x = (room_width) - (32 * max_scale * thousands.xscale / 2);
 	thousands.y = lerp(thousands.y, room_height, lerp_speed);
 
 	

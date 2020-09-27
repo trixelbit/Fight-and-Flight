@@ -1,8 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 streak = 0;
-total_spawned = 50;
-max_total_enemy = 80;
+total_spawned = 10;
+max_total_enemy = 25;
 active = false
 
 frame_length = 50;
@@ -96,6 +96,7 @@ spawn_frame = function()
 		speedlines.active = true;
 		audio_play_sound(s_enginespeedup,50, 0);
 		audio_play_sound(s_letpickupthepace,50, 0);
+		instance_create_layer(0,0, "UI", hand_throttle);
 	}
 	else if ( total_spawned < 1)
 	{
@@ -106,7 +107,7 @@ spawn_frame = function()
 	else
 	{
 		total_spawned -= 15;
-		background_drawer.og_scroll_speed += .12;
+		background_drawer.og_scroll_speed += .2;
 		
 	}
 }
