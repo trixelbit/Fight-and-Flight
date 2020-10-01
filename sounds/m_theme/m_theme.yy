@@ -7,8 +7,8 @@
   "type": 1,
   "bitDepth": 1,
   "audioGroupId": {
-    "name": "audiogroup_default",
-    "path": "audiogroups/audiogroup_default",
+    "name": "agMusic",
+    "path": "audiogroups/agMusic",
   },
   "soundFile": "m_theme.mp3",
   "duration": 139.263748,

@@ -7,8 +7,8 @@
   "type": 0,
   "bitDepth": 1,
   "audioGroupId": {
-    "name": "audiogroup_default",
-    "path": "audiogroups/audiogroup_default",
+    "name": "agSFX",
+    "path": "audiogroups/agSFX",
   },
   "soundFile": "s_coin.wav",
   "duration": 0.481667,

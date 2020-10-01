@@ -7,6 +7,8 @@ minutes = frame_count mod  1800;
 
 if(lives <= 0)
 {
+	instance_activate_object(retry);
+	
 	ones.xscale = lerp(ones.xscale, max_scale, lerp_speed);
 	ones.yscale = ones.xscale;
 	ones.x = (room_width) - (32 * 1 * ones.xscale / 2);
