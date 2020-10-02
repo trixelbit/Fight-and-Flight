@@ -94,6 +94,7 @@ move_dodge = function ()
 		sprite_index = sprite.dodge;
 		image_speed = 1.4;
 		var _i = instance_create_layer(x,y,"FX", smoke_burst);
+		audio_play_sound(s_engine_dodge, 100, 0);
 	}
 	else
 	{
