@@ -25,5 +25,4 @@ for( i = -1; i < lives - 1; i++ )
 	var _x_offset = floor(random_range(0,.99) * (3 / lives));
 	var _y_offset = floor(random_range(0,.99) * (3 / lives));
 	draw_sprite_ext(spr_heart, 0 , (room_width) + (64 * i) + _x_offset, 32 + _y_offset, 2, 2, 0, c_white, 1);
-	
 }

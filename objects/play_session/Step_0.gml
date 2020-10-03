@@ -12,6 +12,7 @@ if(audio_is_playing(m_phase1) and !audio_is_playing(m_phase2))
 if(lives <= 0)
 {
 	instance_activate_object(retry);
+	instance_activate_object(gotomenu);
 	
 	ones.xscale = lerp(ones.xscale, max_scale, lerp_speed);
 	ones.yscale = ones.xscale;
