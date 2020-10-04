@@ -13,8 +13,8 @@
   "soundFile": "s_engine_dodge.wav",
   "duration": 1.007177,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "sfx",
+    "path": "folders/Sounds/sfx.yy",
   },
   "resourceVersion": "1.0",
   "name": "s_engine_dodge",

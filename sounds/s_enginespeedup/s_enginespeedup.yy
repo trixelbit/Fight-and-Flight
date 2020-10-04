@@ -13,8 +13,8 @@
   "soundFile": "s_enginespeedup.wav",
   "duration": 6.005,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "sfx",
+    "path": "folders/Sounds/sfx.yy",
   },
   "resourceVersion": "1.0",
   "name": "s_enginespeedup",

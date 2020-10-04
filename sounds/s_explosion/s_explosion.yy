@@ -10,14 +10,14 @@
     "name": "agSFX",
     "path": "audiogroups/agSFX",
   },
-  "soundFile": "s_switch.wav",
-  "duration": 0.466542,
+  "soundFile": "s_explosion.wav",
+  "duration": 5.566769,
   "parent": {
     "name": "sfx",
     "path": "folders/Sounds/sfx.yy",
   },
   "resourceVersion": "1.0",
-  "name": "s_switch",
+  "name": "s_explosion",
   "tags": [],
   "resourceType": "GMSound",
 }

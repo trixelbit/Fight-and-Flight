@@ -30,6 +30,8 @@ if(lives <= 0)
 			background_drawer.og_scroll_speed = 0;
 		
 			image_alpha = 0;	
+			
+			audio_play_sound(s_explosion, 100, 0);
 		}
 		dead = true;
 

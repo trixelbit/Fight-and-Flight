@@ -13,8 +13,8 @@
   "soundFile": "s_hit.wav",
   "duration": 0.480021,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "sfx",
+    "path": "folders/Sounds/sfx.yy",
   },
   "resourceVersion": "1.0",
   "name": "s_hit",
