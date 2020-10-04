@@ -2,14 +2,42 @@
 // You can write your code in this editor
 if(lives <= 0)
 {
-	dead = true;
-	image_alpha = 0;
+	if(!dead)
+	{
+		if(image_alpha != 0)
+		{
+			var _i = instance_create_layer(x,y,"FX", particle);
+			_i.sprite_index = spr_explosion;
+			_i = instance_create_layer(x,y,"FX", particle);
+			_i.sprite_index = spr_explosion;
+			_i.x += random_range(-10, 10);
+			_i.image_angle = random_range(0,360);
+			_i = instance_create_layer(x,y,"FX", particle);
+			_i.sprite_index = spr_explosion;
+			_i.x += random_range(-10, 10);
+			_i.image_angle = random_range(0,360);
+		
+			for(_i = 0; _i < 6; _i++)
+			{
+				var _temp = instance_create_layer(x,y,"FX", parts);
+				_temp.image_index = _i;
+				_temp.vspeed = random_range(-3, -8);
+				_temp.hspeed += background_drawer.scroll_speed * 2 + random_range(-5,3);
+			}
+			
+			instance_deactivate_object(spawner);
+			
+			background_drawer.og_scroll_speed = 0;
+		
+			image_alpha = 0;	
+		}
+		dead = true;
+
+	}
+	
 }
 else
 {
-
-	
-
 
 	if (keyboard_check_pressed(vk_up))
 	{
@@ -72,7 +100,7 @@ else
 
 		image_xscale = lerp(image_xscale, 1, .1);
 		image_yscale = image_xscale;
-		image_alpha = 1;
+
 		instance_create_layer(x - 25, y + 2, "BackgroundEffects", smoke);
 		instance_create_layer(x - 25, y + 2, "BackgroundEffects", smoke);
 

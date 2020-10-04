@@ -9,11 +9,15 @@ if(audio_is_playing(m_phase1) and !audio_is_playing(m_phase2))
 	audio_play_sound(m_phase2,1000, 1);
 }
 
+// lose state
 if(lives <= 0)
 {
+	//activate UI objects
 	instance_activate_object(retry);
 	instance_activate_object(gotomenu);
 	
+	
+	//move digits
 	ones.xscale = lerp(ones.xscale, max_scale, lerp_speed);
 	ones.yscale = ones.xscale;
 	ones.x = (room_width) - (32 * 1 * ones.xscale / 2);

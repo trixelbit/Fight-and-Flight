@@ -4,7 +4,7 @@
 
 
 // when lives are not full
-if(lives < 3)
+if(lives < 3 and !player.dead)
 {
 	lives++;
 	with(player)
