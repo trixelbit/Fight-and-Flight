@@ -8,7 +8,7 @@ if(lives <= 0)
 else
 {
 
-	instance_create_layer(x - 25, y + 2, "BackgroundEffects", smoke);
+	
 
 
 	if (keyboard_check_pressed(vk_up))
@@ -60,6 +60,7 @@ else
 		image_alpha = .9;
 		image_xscale = lerp(image_xscale, 1.5, .1);
 		image_yscale = image_xscale;
+		x += 2;
 	
 		if(image_index > 10)
 		{
@@ -72,6 +73,8 @@ else
 		image_xscale = lerp(image_xscale, 1, .1);
 		image_yscale = image_xscale;
 		image_alpha = 1;
+		instance_create_layer(x - 25, y + 2, "BackgroundEffects", smoke);
+		instance_create_layer(x - 25, y + 2, "BackgroundEffects", smoke);
 
 	}
 

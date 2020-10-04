@@ -10,4 +10,3 @@ else
 	audio_group_set_gain(agMusic, 0, 1);
 	image_alpha = .5;
 }
-
