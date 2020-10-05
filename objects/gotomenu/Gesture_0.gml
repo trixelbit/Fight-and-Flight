@@ -6,4 +6,5 @@ if(!activated)
 	alarm[0] = 30;
 	image_index = 1;
 	audio_play_sound(s_switch, 50, 0);
+	activate_gates();
 }
