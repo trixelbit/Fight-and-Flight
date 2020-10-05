@@ -2,8 +2,10 @@
 // You can write your code in this editor
 if(lives <= 0)
 {
+	// death state
 	if(!dead)
 	{
+		// on enter death state (execute once)
 		if(image_alpha != 0)
 		{
 			var _i = instance_create_layer(x,y,"FX", particle);
@@ -32,11 +34,13 @@ if(lives <= 0)
 			image_alpha = 0;	
 			
 			audio_play_sound(s_explosion, 100, 0);
+			audio_stop_sound(s_engine_idle);
 			
 			update_scores();
 			save_data();
 			
 		}
+		
 		dead = true;
 
 	}

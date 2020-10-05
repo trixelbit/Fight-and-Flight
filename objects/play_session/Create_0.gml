@@ -7,7 +7,8 @@ score_xoffset = 64;
 lerp_speed = .1;
 max_scale = 8;
 
-audio_stop_all();
+audio_stop_sound(m_phase1);
+audio_stop_sound(m_phase2);
 audio_play_sound(m_phase1,1000, 0);
 
 function digit() constructor
