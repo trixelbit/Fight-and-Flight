@@ -5,5 +5,5 @@ global.music_toggle = true;
 global.sound_toggle = true;
 
 // top ten scores
-global.scores = array_create(10, [0,0,0,0,0,0,0,0,0,0]);
+global.scores = array_create(10, 0);
 
