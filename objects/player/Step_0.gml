@@ -32,6 +32,10 @@ if(lives <= 0)
 			image_alpha = 0;	
 			
 			audio_play_sound(s_explosion, 100, 0);
+			
+			update_scores();
+			save_data();
+			
 		}
 		dead = true;
 
