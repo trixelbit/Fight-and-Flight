@@ -4,7 +4,8 @@ frame_count++;
 seconds = (frame_count mod 30);
 minutes = frame_count mod  1800;
 
-if(audio_is_playing(m_phase1) and !audio_is_playing(m_phase2))
+//audio managing
+if(!audio_is_playing(m_phase1) and !audio_is_playing(m_phase2))
 {
 	audio_play_sound(m_phase2,1000, 1);
 }

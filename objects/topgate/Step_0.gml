@@ -40,7 +40,7 @@ else
 
 
 
-if(activated and y >  -1)
+if(activated and y >  -3)
 {
 	if(!audio_is_playing(s_gateclank) and audio_is_playing(s_gate_motor))
 	{
@@ -49,7 +49,7 @@ if(activated and y >  -1)
 		yspeed = 1;
 	}
 }
-else if (abs(y + 300) < 20)
+else if (abs(y + 300) < 50)
 {
 	if(!audio_is_playing(s_gate_lock) and audio_is_playing(s_gate_motor))
 	{
