@@ -12,7 +12,7 @@ if(activated)
 	draw_set_font(Font1);
 	for(var i = 0; i < 10; i++)
 	{
-		draw_text( board_x + 170 , 73 + (i * 20), string(i + 1) + " : " + string( global.scores[i] ));
+		draw_text( board_x + 170 , board_y + 80 + (i * 20), string(i + 1) + " : " + string( global.scores[i] ));
 	}
 }
 else
@@ -25,7 +25,7 @@ else
 	draw_set_font(Font1);
 	for(var i = 0; i < 10; i++)
 	{
-		draw_text( board_x + 170 , 73 + (i * 20), string(i + 1) + " : " + string( global.scores[i] ));
+		draw_text( board_x + 170 , board_y + 80 + (i * 20), string(i + 1) + " : " + string( global.scores[i] ));
 	}
 }
 

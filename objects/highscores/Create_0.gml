@@ -5,4 +5,4 @@ x = -300;
 
 
 board_x = 1000;
-board_y = 0;
+board_y = -18;
