@@ -7,15 +7,15 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 0,
-  "bbox_right": 159,
+  "bbox_left": 243,
+  "bbox_right": 598,
   "bbox_top": 0,
-  "bbox_bottom": 159,
+  "bbox_bottom": 269,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 160,
-  "height": 160,
+  "width": 600,
+  "height": 270,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"6baf50ad-8ef6-4db1-876f-f3c06a7ffe43","path":"sprites/Sprite25/Sprite25.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6baf50ad-8ef6-4db1-876f-f3c06a7ffe43","path":"sprites/Sprite25/Sprite25.yy",},"LayerId":{"name":"11221390-7658-4388-a8e4-1c5c4b5173bf","path":"sprites/Sprite25/Sprite25.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Sprite25","path":"sprites/Sprite25/Sprite25.yy",},"resourceVersion":"1.0","name":"6baf50ad-8ef6-4db1-876f-f3c06a7ffe43","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"5ff9f805-64e1-443e-a41a-f90e49cbb823","path":"sprites/spr_luna/spr_luna.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"5ff9f805-64e1-443e-a41a-f90e49cbb823","path":"sprites/spr_luna/spr_luna.yy",},"LayerId":{"name":"b9afde60-a951-4da5-86e2-a5a6d74cd691","path":"sprites/spr_luna/spr_luna.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_luna","path":"sprites/spr_luna/spr_luna.yy",},"resourceVersion":"1.0","name":"5ff9f805-64e1-443e-a41a-f90e49cbb823","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"Sprite25","path":"sprites/Sprite25/Sprite25.yy",},
+    "spriteId": {"name":"spr_luna","path":"sprites/spr_luna/spr_luna.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"d30aae63-cf6e-4b76-94b7-1472c3b59ef0","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6baf50ad-8ef6-4db1-876f-f3c06a7ffe43","path":"sprites/Sprite25/Sprite25.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"bf6d5a32-ce5c-457a-ae41-70b5458285cf","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5ff9f805-64e1-443e-a41a-f90e49cbb823","path":"sprites/spr_luna/spr_luna.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,21 +58,21 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"Sprite25","path":"sprites/Sprite25/Sprite25.yy",},
+    "parent": {"name":"spr_luna","path":"sprites/spr_luna/spr_luna.yy",},
     "resourceVersion": "1.3",
-    "name": "Sprite25",
+    "name": "spr_luna",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"11221390-7658-4388-a8e4-1c5c4b5173bf","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"b9afde60-a951-4da5-86e2-a5a6d74cd691","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "main menu",
     "path": "folders/Sprites/ui/main menu.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Sprite25",
+  "name": "spr_luna",
   "tags": [],
   "resourceType": "GMSprite",
 }
