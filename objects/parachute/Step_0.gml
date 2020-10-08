@@ -43,3 +43,9 @@ else
 	gravity = .5;
 	sprite_index = spr_player_jump;
 }
+
+
+if(y > 600)
+{
+	instance_destroy();
+}
