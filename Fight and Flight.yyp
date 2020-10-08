@@ -21,6 +21,7 @@
     {"id":{"name":"gotomenu","path":"objects/gotomenu/gotomenu.yy",},"order":1,},
     {"id":{"name":"coin","path":"objects/coin/coin.yy",},"order":0,},
     {"id":{"name":"spr_player_up","path":"sprites/spr_player_up/spr_player_up.yy",},"order":2,},
+    {"id":{"name":"spr_crowns","path":"sprites/spr_crowns/spr_crowns.yy",},"order":4,},
     {"id":{"name":"smoke","path":"objects/smoke/smoke.yy",},"order":8,},
     {"id":{"name":"particle","path":"objects/particle/particle.yy",},"order":5,},
     {"id":{"name":"highscores","path":"objects/highscores/highscores.yy",},"order":4,},

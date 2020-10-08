@@ -4,7 +4,7 @@ audio_loaded = false;
 file_loaded = false;
 global.music_volume = 0.5;
 global.sound_volume = 0.8;
-load_data();
+//load_data();
 
 // mobile scaling
 
@@ -26,16 +26,33 @@ else
 surface_resize(application_surface, ww, hh);
 
 
-var base_w = (600) * 2;
-var base_h = 270 * 2;
+var scale = 1;
+
+switch(os_type)
+{
+	case os_android:
+	scale = 2.15;
+	break;
+	
+	case os_windows:
+	scale = 4;
+	break;
+}
+
+var base_w = 600 * scale;
+var base_h = 270 * scale;
 var aspect = display_get_width() / display_get_height();
 if (aspect > 1)
     {
     //landscape
-    display_set_gui_size(base_h * aspect, base_h);
+    ww = base_h * aspect;
+    hh = base_h;
+    display_set_gui_maximise((display_get_width() / ww), (display_get_height() / hh), 0, 0);
     }
 else
     {
     //portrait
-    display_set_gui_size(base_w, base_w / aspect);
+    ww = base_w;
+    hh = base_w / aspect;
+    display_set_gui_maximise((display_get_width() / ww), (display_get_height() / hh), 0, 0);
     }

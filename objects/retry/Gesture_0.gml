@@ -7,4 +7,5 @@ if(!activated)
 	image_index = 1;
 	audio_play_sound(s_switch, 50, 0);
 	activate_gates();
+	global.score_placement = -1;
 }

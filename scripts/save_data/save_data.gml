@@ -48,10 +48,12 @@ function load_data()
 	}
 }
 
+// return placement of current score
 function update_scores()
 {
 	var new_list = array_create(10);
 	var inserted = false;
+	var placement = -1;
 	
 	for(var i = 0; i < 10; i++)
 	{
@@ -60,6 +62,7 @@ function update_scores()
 		{
 			new_list[i] = score;
 			inserted = true;
+			placement = i + 1;
 		}
 		else
 		{
@@ -73,8 +76,9 @@ function update_scores()
 			}
 		}
 
-	}
-	
+	}	
 	
 	global.scores = new_list;
+	
+	global.score_placement = placement;
 }

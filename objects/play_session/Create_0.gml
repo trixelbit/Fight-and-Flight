@@ -6,7 +6,7 @@ minutes = 0
 score_xoffset = 64;
 lerp_speed = .1;
 max_scale = 8;
-
+alpha = 1;
 audio_stop_sound(m_phase1);
 audio_stop_sound(m_phase2);
 audio_play_sound(m_phase1,1000, 0);

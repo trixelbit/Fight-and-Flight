@@ -31,7 +31,7 @@ if(activated)
 else
 {
 	y = lerp(y, -300, .1);
-	Y = lerp(Y, 400, .1);
+	Y = lerp(Y, 300, .1);
 
 }
 
