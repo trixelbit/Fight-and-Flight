@@ -1,5 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
+
+if(keyboard_check_pressed(vk_escape))
+{
+	lives = 0;
+}
+
+
 if(lives <= 0)
 {
 	// death state
@@ -19,6 +26,8 @@ if(lives <= 0)
 			_i.x += random_range(-10, 10);
 			_i.image_angle = random_range(0,360);
 		
+		
+			// spawns motor parts
 			for(_i = 0; _i < 6; _i++)
 			{
 				var _temp = instance_create_layer(x,y,"FX", parts);
@@ -26,6 +35,8 @@ if(lives <= 0)
 				_temp.vspeed = random_range(-3, -8);
 				_temp.hspeed += background_drawer.scroll_speed * 2 + random_range(-5,3);
 			}
+			
+			var _temp = instance_create_layer(x,y,"FX", parachute);
 			
 			instance_deactivate_object(spawner);
 			
