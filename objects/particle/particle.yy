@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "spr_slash",
-    "path": "sprites/spr_slash/spr_slash.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -26,8 +23,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "particles",
+    "path": "folders/Objects/particles.yy",
   },
   "resourceVersion": "1.0",
   "name": "particle",

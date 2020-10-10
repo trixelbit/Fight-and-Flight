@@ -93,6 +93,12 @@ else
 		{
 			attack = false;
 		}
+		else if (image_index > 3 and instance_number(slash) < 1)
+		{
+			var _i = instance_create_layer(x,y,"FX", slash);
+			_i.hspeed = .5;
+		}
+		
 	}
 	else if (!dodge and !attack)
 	{

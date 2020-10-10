@@ -3,11 +3,10 @@ audio_group_load(agSFX);
 audio_loaded = false;
 file_loaded = false;
 global.music_volume = 0.6;
-global.sound_volume = 0.9;
+global.sound_volume = 1;
 load_data();
 
 // mobile scaling
-
 var base_w = 600 ;
 var base_h = 270;
 var aspect = base_w / base_h ; // get the GAME aspect ratio

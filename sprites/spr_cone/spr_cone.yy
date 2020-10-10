@@ -7,15 +7,15 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 0,
-  "bbox_right": 47,
-  "bbox_top": 5,
-  "bbox_bottom": 44,
+  "bbox_left": 1,
+  "bbox_right": 53,
+  "bbox_top": 4,
+  "bbox_bottom": 48,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 48,
-  "height": 48,
+  "width": 55,
+  "height": 55,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"31862bb4-cdfd-45ca-87e6-0e4a68f2bf23","path":"sprites/spr_cone/spr_cone.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"31862bb4-cdfd-45ca-87e6-0e4a68f2bf23","path":"sprites/spr_cone/spr_cone.yy",},"LayerId":{"name":"45d0f65e-39e5-4d7b-b6b8-b820ce5cdaf6","path":"sprites/spr_cone/spr_cone.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_cone","path":"sprites/spr_cone/spr_cone.yy",},"resourceVersion":"1.0","name":"31862bb4-cdfd-45ca-87e6-0e4a68f2bf23","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"488396e3-e6ee-47d9-8620-c6744280f443","path":"sprites/spr_cone/spr_cone.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"488396e3-e6ee-47d9-8620-c6744280f443","path":"sprites/spr_cone/spr_cone.yy",},"LayerId":{"name":"e51b008a-f105-45e5-9792-7aaf4957f2b2","path":"sprites/spr_cone/spr_cone.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_cone","path":"sprites/spr_cone/spr_cone.yy",},"resourceVersion":"1.0","name":"488396e3-e6ee-47d9-8620-c6744280f443","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"spr_cone","path":"sprites/spr_cone/spr_cone.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"ad318d37-484b-4bff-8f36-5aa9affa5828","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"31862bb4-cdfd-45ca-87e6-0e4a68f2bf23","path":"sprites/spr_cone/spr_cone.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"4ec2162f-245d-408f-ba59-4dd768f69b4c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"488396e3-e6ee-47d9-8620-c6744280f443","path":"sprites/spr_cone/spr_cone.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -54,8 +54,8 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 24,
-    "yorigin": 24,
+    "xorigin": 27,
+    "yorigin": 27,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_cone","path":"sprites/spr_cone/spr_cone.yy",},
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"45d0f65e-39e5-4d7b-b6b8-b820ce5cdaf6","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"e51b008a-f105-45e5-9792-7aaf4957f2b2","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "enemies",

@@ -3,7 +3,7 @@
 streak = 0;
 total_spawned = 10;
 max_total_enemy = 25;
-max_scroll_speed = 30;
+max_scroll_speed = 20;
 active = false
 
 
