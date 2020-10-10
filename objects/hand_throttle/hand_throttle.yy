@@ -30,8 +30,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "transitions",
+    "path": "folders/Objects/transitions.yy",
   },
   "resourceVersion": "1.0",
   "name": "hand_throttle",

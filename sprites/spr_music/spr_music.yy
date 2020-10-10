@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"5d323e65-278c-441b-a132-088f50b12b18","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "main menu",
-    "path": "folders/Sprites/ui/main menu.yy",
+    "name": "menmus",
+    "path": "folders/Sprites/ui/menmus.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_music",

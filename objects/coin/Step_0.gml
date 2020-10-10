@@ -9,11 +9,7 @@ if(x < -150)
 }
 
 
-if (place_meeting( x + 64, y, enemy ) or 
-place_meeting( x - 64, y, enemy ) or 
-place_meeting( x + 32, y, enemy ) or 
-place_meeting( x - 32, y, enemy ) or 
-place_meeting( x, y, enemy )
+if ( place_meeting( x, y, enemy )
 )
 {
 	instance_destroy();

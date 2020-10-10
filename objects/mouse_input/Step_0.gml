@@ -48,6 +48,15 @@ if(inputs[0].active)
 		}
 		inputs[0].reset();
 	}
+	else if (inputs[0].x_speed < -touch_threshold)
+	{
+		with(player)
+		{
+			dash_attack();
+			
+		}
+		inputs[0].reset();
+	}
 }
 	
 

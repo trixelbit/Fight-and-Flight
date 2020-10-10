@@ -105,13 +105,20 @@ move_dodge = function ()
 dash_attack = function ()
 {
 	
-	
-	attack =  true;
-	sprite_index = spr_player_attack;
-	image_index = 6;
-	image_speed =  8;
-	
-	
+	if(is_position_snapped and !dodge and !attack and !dead)
+	{
+		attack = true;
+		sprite_index = sprite.dodge;
+		image_speed = 1.4;
+		var _i = instance_create_layer(x,y,"FX", smoke_burst);
+		var _i = instance_create_layer(x,y,"FX", slash);
+		_i.hspeed = .5;
+		audio_play_sound(s_engine_dodge, 100, 0);
+	}
+	else
+	{
+		return -1;
+	}
 }
 
 

@@ -1,6 +1,6 @@
 {
   "compression": 1,
-  "volume": 0.51,
+  "volume": 1.0,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -11,7 +11,7 @@
     "path": "audiogroups/agSFX",
   },
   "soundFile": "s_rev.wav",
-  "duration": 2.549036,
+  "duration": 1.55599809,
   "parent": {
     "name": "sfx",
     "path": "folders/Sounds/sfx.yy",

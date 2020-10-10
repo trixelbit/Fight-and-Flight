@@ -11,7 +11,7 @@
     "path": "audiogroups/agSFX",
   },
   "soundFile": "s_gate_motor.wav",
-  "duration": 1.851145,
+  "duration": 1.855952,
   "parent": {
     "name": "sfx",
     "path": "folders/Sounds/sfx.yy",

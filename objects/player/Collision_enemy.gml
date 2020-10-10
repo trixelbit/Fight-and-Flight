@@ -15,9 +15,10 @@ if(!invulnerable and !dodge and !dead)
 	image_angle = random_range(-70, 70);
 	x -= 20;
 	
-	if(other.object_index == v_lazer or other.object_index == h_lazer)
-	{
-		audio_play_sound(s_hit,1,0);
-	}
+	background_drawer.flash_alpha = .8;
+	
+
+	audio_play_sound(s_hit,1,0);
+
 
 }

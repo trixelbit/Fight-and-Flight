@@ -39,6 +39,7 @@ if(lives <= 0)
 			var _temp = instance_create_layer(x,y,"FX", parachute);
 			
 			instance_deactivate_object(spawner);
+			instance_deactivate_object(pause);
 			
 			background_drawer.og_scroll_speed = 0;
 		
@@ -64,44 +65,42 @@ else
 	{
 		move_up();
 	}
-	else
-	if(keyboard_check_pressed(vk_down))
+	else if(keyboard_check_pressed(vk_down))
 	{
 		move_down();
 	}
 
 
 
-	if(keyboard_check_pressed(vk_space))
+	if(keyboard_check_pressed(vk_right))
 	{
 		move_dodge();
 	}
+	else if(keyboard_check_pressed(vk_left))
+	{
+		dash_attack();
+	}
+	
 
 
 	if(attack)
 	{
-		if(image_index < 6)
-		{
+		image_alpha = .9;
 
-		}
-		else
+		x -= 3;
+	
+		if(image_index > 10)
 		{
-			instance_create_layer(x,y, "BackgroundEffects", ghost);
-			image_speed = 5;
-		
-			//background_drawer.scroll_speed = background_drawer.og_scroll_speed + 10;
-			x += 32;
-			attack_invuln = true;
-		
-			if( image_index >= 9 )
-			{
-				sprite_index = sprite.idle;
-				image_speed = 1;
-
-				attack_invuln = false;
-				attack = false;
-			}
+			attack = false;
 		}
+	}
+	else if (!dodge and !attack)
+	{
+		image_xscale = lerp(image_xscale, 1, .1);
+		image_yscale = image_xscale;
+		
+		instance_create_layer(x - 25, y + 2, "BackgroundEffects", smoke);
+		instance_create_layer(x - 25, y + 2, "BackgroundEffects", smoke);
 	}
 
 	if(dodge)
@@ -116,7 +115,7 @@ else
 			dodge = false;
 		}
 	}
-	else
+	else if(!dodge and !attack)
 	{
 
 		image_xscale = lerp(image_xscale, 1, .1);
@@ -124,7 +123,7 @@ else
 
 		instance_create_layer(x - 25, y + 2, "BackgroundEffects", smoke);
 		instance_create_layer(x - 25, y + 2, "BackgroundEffects", smoke);
-
+		
 	}
 
 	image_angle = lerp(image_angle, 0, .2);

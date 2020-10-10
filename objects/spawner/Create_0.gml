@@ -3,7 +3,9 @@
 streak = 0;
 total_spawned = 10;
 max_total_enemy = 25;
+max_scroll_speed = 30;
 active = false
+
 
 frame_length = 50;
 alarm[0] = 1;
@@ -72,6 +74,17 @@ spawn_frame = function()
 							spike_spawned = true;
 						}
 					}
+					else if (enemy_gen < 90)
+					{
+						if(!place_meeting(x, _y, v_lazer) and 
+							!place_meeting(x, _y - global.grid_snap, v_lazer) and 
+							!place_meeting(x, _y + global.grid_snap, v_lazer))
+						{
+							var temp = instance_create_layer(x, _y, "Enemies", cone);
+							total_spawned++;
+						}
+						
+					}
 					else
 					{
 						streak = 0;
@@ -107,7 +120,8 @@ spawn_frame = function()
 	else
 	{
 		total_spawned -= 15;
-		background_drawer.og_scroll_speed += .2;
+		background_drawer.og_scroll_speed = lerp(background_drawer.og_scroll_speed , max_scroll_speed, .01)
+		//background_drawer.og_scroll_speed += .2;
 		
 	}
 }

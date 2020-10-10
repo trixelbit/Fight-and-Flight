@@ -30,6 +30,11 @@ for(i = 0; i < 5; i++)
 		);
 		
 }
+/*
+draw_set_alpha(flash_alpha);
+draw_set_color(color);
+draw_rectangle(-32, -32,632,310, false);
+draw_set_alpha(1);
 
 /*
 // adjust background color

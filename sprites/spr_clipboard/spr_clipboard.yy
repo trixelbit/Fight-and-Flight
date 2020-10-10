@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"828d5ff9-3a1a-47ab-b897-a29226e28c00","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "main menu",
-    "path": "folders/Sprites/ui/main menu.yy",
+    "name": "menmus",
+    "path": "folders/Sprites/ui/menmus.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_clipboard",
