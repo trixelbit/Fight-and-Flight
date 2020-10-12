@@ -105,8 +105,9 @@ else
 		image_xscale = lerp(image_xscale, 1, .1);
 		image_yscale = image_xscale;
 		
-		instance_create_layer(x - 25, y + 2, "BackgroundEffects", smoke);
-		instance_create_layer(x - 25, y + 2, "BackgroundEffects", smoke);
+		part_particles_create( PartSystem, x - 25, y + 2, Smoke, 2);
+		//instance_create_layer(x - 25, y + 2, "BackgroundEffects", smoke);
+		//instance_create_layer(x - 25, y + 2, "BackgroundEffects", smoke);
 	}
 
 	if(dodge)
@@ -127,8 +128,9 @@ else
 		image_xscale = lerp(image_xscale, 1, .1);
 		image_yscale = image_xscale;
 
-		instance_create_layer(x - 25, y + 2, "BackgroundEffects", smoke);
-		instance_create_layer(x - 25, y + 2, "BackgroundEffects", smoke);
+		part_particles_create( PartSystem, x - 25, y + 2, Smoke, 2);
+		//instance_create_layer(x - 25, y + 2, "BackgroundEffects", smoke);
+		//instance_create_layer(x - 25, y + 2, "BackgroundEffects", smoke);
 		
 	}
 

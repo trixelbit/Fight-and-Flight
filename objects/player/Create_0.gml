@@ -12,6 +12,16 @@ attack = false;
 dodge = false;
 dead = false;
 
+#region Particle System Define
+PartSystem = part_system_create();
+Smoke = part_type_create();
+part_type_sprite(Smoke, spr_smoke, true, false, false );
+part_type_size(Smoke, .2,.2, .08, 0);
+part_type_speed(Smoke, 5, 15, 0, 0);
+part_type_direction(Smoke, 180 - 5, 180 + 5 , 0, 2);
+part_type_life(Smoke,5, 10);
+
+#endregion
 audio_play_sound(s_engine_idle, 1, 1);
 
 
