@@ -7,7 +7,7 @@ skip = false;
 global.music_volume = 0.6;
 global.sound_volume = 1;
 load_data();
-show_debug_overlay(true);
+//show_debug_overlay(true);
 
 audio_play_sound(m_intro,1000,false);
 phase = 0;
