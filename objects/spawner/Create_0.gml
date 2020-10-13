@@ -108,7 +108,7 @@ spawn_frame = function()
 		i.alarm[2] = random_range(60, 240);
 		speedlines.active = true;
 		audio_play_sound(s_enginespeedup,50, 0);
-		audio_play_sound(s_letpickupthepace,50, 0);
+		//audio_play_sound(s_letpickupthepace,50, 0);
 		instance_create_layer(0,0, "UI", hand_throttle);
 	}
 	else if ( total_spawned < 1)

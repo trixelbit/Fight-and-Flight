@@ -22,6 +22,9 @@ part_type_direction(Smoke, 180 - 5, 180 + 5 , 0, 2);
 part_type_life(Smoke,5, 10);
 
 #endregion
+
+audio_stop_sound(m_menu_theme);
+audio_stop_sound(m_menu_intro);
 audio_play_sound(s_engine_idle, 1, 1);
 
 

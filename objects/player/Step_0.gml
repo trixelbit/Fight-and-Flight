@@ -47,6 +47,8 @@ if(lives <= 0)
 			
 			audio_play_sound(s_explosion, 100, 0);
 			audio_stop_sound(s_engine_idle);
+			var _vocal = choose(v_lose1, v_lose2, v_lose3, v_lose4, v_lose5, v_lose6, v_lose7, v_lose8);
+			audio_play_sound(_vocal, 50, 0);
 			
 			update_scores();
 			save_data();

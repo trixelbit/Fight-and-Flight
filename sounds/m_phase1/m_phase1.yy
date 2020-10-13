@@ -13,8 +13,8 @@
   "soundFile": "m_phase1.mp3",
   "duration": 20.0409184,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "music",
+    "path": "folders/Sounds/music.yy",
   },
   "resourceVersion": "1.0",
   "name": "m_phase1",

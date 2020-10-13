@@ -1,13 +1,21 @@
 audio_group_load(agMusic);
 audio_group_load(agSFX);
+randomize();
 audio_loaded = false;
 file_loaded = false;
+skip = false;
 global.music_volume = 0.6;
 global.sound_volume = 1;
 load_data();
 show_debug_overlay(true);
 
+audio_play_sound(m_intro,1000,false);
+phase = 0;
+alarm[0] = 2.4 * 60;
+alarm[1] = 7 * 60;
+alarm[2] = 10 * 60;
 
+#region Mobile scaling
 // mobile scaling
 var base_w = 600 ;
 var base_h = 270;
@@ -57,3 +65,6 @@ else
     hh = base_w / aspect;
     display_set_gui_maximise((display_get_width() / ww), (display_get_height() / hh), 0, 0);
     }
+
+#endregion
+
