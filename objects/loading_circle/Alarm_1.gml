@@ -3,3 +3,4 @@
 phase = 2;
 
 activate_gates();
+instance_deactivate_object(skip);

@@ -1,9 +1,10 @@
 audio_group_load(agMusic);
 audio_group_load(agSFX);
 randomize();
+instance_deactivate_object(skip)
 audio_loaded = false;
 file_loaded = false;
-skip = false;
+
 global.music_volume = 0.6;
 global.sound_volume = 1;
 load_data();
@@ -13,7 +14,7 @@ audio_play_sound(m_intro,1000,false);
 phase = 0;
 alarm[0] = 2.4 * 60;
 alarm[1] = 7 * 60;
-alarm[2] = 10 * 60;
+alarm[2] = 8 * 60;
 
 #region Mobile scaling
 // mobile scaling

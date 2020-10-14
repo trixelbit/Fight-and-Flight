@@ -7,8 +7,8 @@
   "type": 0,
   "bitDepth": 1,
   "audioGroupId": {
-    "name": "audiogroup_default",
-    "path": "audiogroups/audiogroup_default",
+    "name": "agSFX",
+    "path": "audiogroups/agSFX",
   },
   "soundFile": "v_rev1.wav",
   "duration": 1.93803906,

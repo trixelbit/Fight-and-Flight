@@ -9,11 +9,11 @@ score += 10;
 
 #region audio
 	_temp = random_range(0,100);
-	if(_temp > 90)
+	if(_temp > 80)
 	{
 		audio_play_sound(v_hit1, 50, 0);
 	}
-	else if(_temp > 80)
+	else if(_temp > 60)
 	{
 		audio_play_sound(v_hit2, 50, 0);
 	}
