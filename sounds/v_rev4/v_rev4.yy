@@ -7,8 +7,8 @@
   "type": 0,
   "bitDepth": 1,
   "audioGroupId": {
-    "name": "audiogroup_default",
-    "path": "audiogroups/audiogroup_default",
+    "name": "agVoices",
+    "path": "audiogroups/agVoices",
   },
   "soundFile": "v_rev4.wav",
   "duration": 1.93803906,

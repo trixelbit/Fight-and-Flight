@@ -3,7 +3,7 @@
 streak = 0;
 total_spawned = 10;
 max_total_enemy = 25;
-max_scroll_speed = 20;
+max_scroll_speed = 12;//20;
 active = false
 
 
@@ -120,9 +120,8 @@ spawn_frame = function()
 	else
 	{
 		total_spawned -= 15;
-		background_drawer.og_scroll_speed = lerp(background_drawer.og_scroll_speed , max_scroll_speed, .01)
-		//background_drawer.og_scroll_speed += .2;
-		
+		background_drawer.og_scroll_speed = lerp(background_drawer.og_scroll_speed , max_scroll_speed, .02);//.01);
+		//background_drawer.og_scroll_speed += .2;	
 	}
 }
 

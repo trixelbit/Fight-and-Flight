@@ -1,5 +1,6 @@
 audio_group_load(agMusic);
 audio_group_load(agSFX);
+audio_group_load(agVoices);
 randomize();
 instance_deactivate_object(skip)
 audio_loaded = false;
@@ -7,6 +8,7 @@ file_loaded = false;
 
 global.music_volume = 0.6;
 global.sound_volume = 1;
+global.voice_volume = .8;
 load_data();
 //show_debug_overlay(true);
 

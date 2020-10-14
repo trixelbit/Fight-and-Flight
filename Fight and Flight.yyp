@@ -149,6 +149,7 @@
     {"id":{"name":"spr_exist_p","path":"sprites/spr_exist_p/spr_exist_p.yy",},"order":9,},
     {"id":{"name":"retry","path":"objects/retry/retry.yy",},"order":0,},
     {"id":{"name":"m_phase1","path":"sounds/m_phase1/m_phase1.yy",},"order":0,},
+    {"id":{"name":"space","path":"sprites/space/space.yy",},"order":5,},
     {"id":{"name":"spr_play","path":"sprites/spr_play/spr_play.yy",},"order":1,},
     {"id":{"name":"spr_throttle","path":"sprites/spr_throttle/spr_throttle.yy",},"order":8,},
     {"id":{"name":"music","path":"objects/music/music.yy",},"order":2,},
@@ -223,6 +224,7 @@
     {"targets":461609314234257646,"resourceVersion":"1.0","name":"audiogroup_default","resourceType":"GMAudioGroup",},
     {"targets":461609314234257646,"resourceVersion":"1.0","name":"agMusic","resourceType":"GMAudioGroup",},
     {"targets":461609314234257646,"resourceVersion":"1.0","name":"agSFX","resourceType":"GMAudioGroup",},
+    {"targets":461609314234257646,"resourceVersion":"1.0","name":"agVoices","resourceType":"GMAudioGroup",},
   ],
   "TextureGroups": [
     {"isScaled":true,"autocrop":true,"border":2,"mipsToGenerate":0,"targets":461609314234257646,"resourceVersion":"1.0","name":"Default","resourceType":"GMTextureGroup",},
