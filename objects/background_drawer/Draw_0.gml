@@ -16,11 +16,28 @@ for(i = 0; i < 5; i++)
 		camera_get_view_x( view_get_camera(view_camera[0])) + current_bg.xoffset + 480,  
 		camera_get_view_y( view_get_camera(view_camera[0])) + current_bg.yoffset
 		);
-		draw_sprite(current_bg.sprite , 0, 
+	draw_sprite(current_bg.sprite , 0, 
 		camera_get_view_x( view_get_camera(view_camera[0])) + current_bg.xoffset - 480,  
 		camera_get_view_y( view_get_camera(view_camera[0])) + current_bg.yoffset
 		);
+	draw_sprite(current_bg.sprite , 0, 
+		camera_get_view_x( view_get_camera(view_camera[0])) + current_bg.xoffset + (480 * 2),  
+		camera_get_view_y( view_get_camera(view_camera[0])) + current_bg.yoffset
+		);
+	draw_sprite(current_bg.sprite , 0, 
+		camera_get_view_x( view_get_camera(view_camera[0])) + current_bg.xoffset - (480 * 2),  
+		camera_get_view_y( view_get_camera(view_camera[0])) + current_bg.yoffset
+		);
+		
 }
+/*
+draw_set_alpha(flash_alpha);
+draw_set_color(color);
+draw_rectangle(-32, -32,632,310, false);
+draw_set_alpha(1);
+
+/*
+// adjust background color
 var current_color = draw_getpixel(room_width/2, room_height/2);
 color =  make_color_hsv
 (

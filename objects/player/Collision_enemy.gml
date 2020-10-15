@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if(!invulnerable)
+if(!invulnerable and !dodge and !dead)
 {
 	invulnerable = true;
 	lives--;
@@ -14,4 +14,11 @@ if(!invulnerable)
 	i.image_yscale =  random_range(0, 100) > 50 ? -1 : 1;
 	image_angle = random_range(-70, 70);
 	x -= 20;
+	
+	background_drawer.flash_alpha = .8;
+	
+
+	audio_play_sound(s_hit,1,0);
+
+
 }

@@ -28,8 +28,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Spawn Objects",
+    "path": "folders/Objects/Spawn Objects.yy",
   },
   "resourceVersion": "1.0",
   "name": "enemy",

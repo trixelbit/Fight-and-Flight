@@ -1,9 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 streak = 0;
-total_spawned = 50;
-max_total_enemy = 80;
+total_spawned = 10;
+max_total_enemy = 25;
+max_scroll_speed = 12;//20;
 active = false
+
 
 frame_length = 50;
 alarm[0] = 1;
@@ -72,6 +74,17 @@ spawn_frame = function()
 							spike_spawned = true;
 						}
 					}
+					else if (enemy_gen < 90)
+					{
+						if(!place_meeting(x, _y, v_lazer) and 
+							!place_meeting(x, _y - global.grid_snap, v_lazer) and 
+							!place_meeting(x, _y + global.grid_snap, v_lazer))
+						{
+							var temp = instance_create_layer(x, _y, "Enemies", cone);
+							total_spawned++;
+						}
+						
+					}
 					else
 					{
 						streak = 0;
@@ -93,15 +106,22 @@ spawn_frame = function()
 		active = false;
 		var i = instance_create_layer(x, y, "Enemies", coin_spawner);
 		i.alarm[2] = random_range(60, 240);
+		speedlines.active = true;
+		audio_play_sound(s_enginespeedup,50, 0);
+		//audio_play_sound(s_letpickupthepace,50, 0);
+		instance_create_layer(0,0, "UI", hand_throttle);
 	}
 	else if ( total_spawned < 1)
 	{
 		active = true;
+		speedlines.active = false;
+		
 	}
 	else
 	{
 		total_spawned -= 15;
-		background_drawer.og_scroll_speed += .05;
+		background_drawer.og_scroll_speed = lerp(background_drawer.og_scroll_speed , max_scroll_speed, .02);//.01);
+		//background_drawer.og_scroll_speed += .2;	
 	}
 }
 

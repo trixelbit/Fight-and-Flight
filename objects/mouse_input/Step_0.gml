@@ -22,8 +22,6 @@ for(var i = 0; i < 1; i++ )
 
 if(inputs[0].active)
 {
-
-
 	if(inputs[0].y_speed < -touch_threshold )
 	{
 		with(player)
@@ -31,6 +29,7 @@ if(inputs[0].active)
 			move_up();		
 		}
 		inputs[0].reset();
+
 	}
 	else if (inputs[0].y_speed > touch_threshold )
 	{
@@ -38,8 +37,25 @@ if(inputs[0].active)
 		{
 			move_down();
 		}
-	
-		inputs[0].reset();	
+		inputs[0].reset();
+	}
+	else if (inputs[0].x_speed > touch_threshold)
+	{
+		with(player)
+		{
+			move_dodge();
+			
+		}
+		inputs[0].reset();
+	}
+	else if (inputs[0].x_speed < -touch_threshold)
+	{
+		with(player)
+		{
+			dash_attack();
+			
+		}
+		inputs[0].reset();
 	}
 }
 	
