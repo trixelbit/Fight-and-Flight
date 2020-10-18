@@ -13,8 +13,8 @@
   "soundFile": "v_hit2.wav",
   "duration": 1.93803906,
   "parent": {
-    "name": "voices",
-    "path": "folders/Sounds/voices.yy",
+    "name": "hit",
+    "path": "folders/Sounds/voices/hit.yy",
   },
   "resourceVersion": "1.0",
   "name": "v_hit2",

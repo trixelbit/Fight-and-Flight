@@ -10,8 +10,8 @@
     "name": "agVoices",
     "path": "audiogroups/agVoices",
   },
-  "soundFile": "v_lose2",
-  "duration": 0.0,
+  "soundFile": "v_lose2.wav",
+  "duration": 2.317494,
   "parent": {
     "name": "voices",
     "path": "folders/Sounds/voices.yy",

@@ -17,7 +17,8 @@ if(!invulnerable and !dodge and !dead)
 	
 	background_drawer.flash_alpha = .8;
 	
-
+	var _i = choose(v_hurt1, v_hurt2, v_hurt3, v_hurt4, v_hurt5, v_hurt6, v_hurt7, v_hurt8, v_hurt9);
+	audio_play_sound(_i, 50, 0);
 	audio_play_sound(s_hit,1,0);
 
 

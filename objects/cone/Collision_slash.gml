@@ -9,12 +9,14 @@ score += 10;
 
 #region audio
 	_temp = random_range(0,100);
-	if(_temp > 80)
+	if(_temp > 95)
 	{
+		audio_group_stop_all(agVoices);
 		audio_play_sound(v_hit1, 50, 0);
 	}
-	else if(_temp > 60)
+	else if(_temp > 90)
 	{
+		audio_group_stop_all(agVoices);
 		audio_play_sound(v_hit2, 50, 0);
 	}
 

@@ -2,13 +2,16 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function save_data()
 {
+	/// check if not in html5
+	if os_browser == browser_not_a_browser
+	{	
 		// overwrite current file
 		if(file_exists("save.sav"))
 		{
 			file_delete("save.sav");
 		}
 		ini_open("save.sav");
-	
+		
 		// save current top 10 scores
 		for(var i = 0; i < 10; i++)
 		{
@@ -20,31 +23,39 @@ function save_data()
 		ini_write_real("Config", "SoundToggle", global.sound_toggle);
 		
 		ini_close();
-		
+	}
+	else
+	{
+		return -1;
+	}
 }
 
 
 function load_data()
 {
-	if(file_exists("save.sav"))
-	{
-		ini_open("save.sav");
-		
-		//load scores into global scores array
-		for(var i = 0; i < 10; i++)
+	// check if not in html5
+	if os_browser == browser_not_a_browser
+    {
+		if(file_exists("save.sav"))
 		{
-			global.scores[i] = ini_read_real("Scores", string(i), 0);
+			ini_open("save.sav");
+		
+			//load scores into global scores array
+			for(var i = 0; i < 10; i++)
+			{
+				global.scores[i] = ini_read_real("Scores", string(i), 0);
+			}
+		
+			//load config values
+			global.music_toggle = ini_read_real("Config", "MusicToggle", true);
+			global.sound_toggle = ini_read_real("Config", "SoundToggle", true);
+		
+			ini_close();
 		}
-		
-		//load config values
-		global.music_toggle = ini_read_real("Config", "MusicToggle", true);
-		global.sound_toggle = ini_read_real("Config", "SoundToggle", true);
-		
-		ini_close();
 	}
 	else
 	{
-
+		return -1;
 	}
 }
 
@@ -57,7 +68,6 @@ function update_scores()
 	
 	for(var i = 0; i < 10; i++)
 	{
-
 		if(score > global.scores[i] and !inserted)
 		{
 			new_list[i] = score;
@@ -75,7 +85,6 @@ function update_scores()
 				new_list[i] = global.scores[i];
 			}
 		}
-
 	}	
 	
 	global.scores = new_list;
