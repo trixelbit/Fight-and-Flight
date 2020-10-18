@@ -1,5 +1,5 @@
 // global constants
-global.version = "1.0";
+global.version = "1.0.3";
 global.gesture_time_frame = 16;
 global.grid_snap = 64 + 16;
 global.music_toggle = true;

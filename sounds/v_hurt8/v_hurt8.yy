@@ -10,14 +10,14 @@
     "name": "agVoices",
     "path": "audiogroups/agVoices",
   },
-  "soundFile": "v_hit10.wav",
+  "soundFile": "v_hurt8.wav",
   "duration": 2.098741,
   "parent": {
-    "name": "hit",
-    "path": "folders/Sounds/voices/hit.yy",
+    "name": "hurt",
+    "path": "folders/Sounds/voices/hurt.yy",
   },
   "resourceVersion": "1.0",
-  "name": "v_hit10",
+  "name": "v_hurt8",
   "tags": [],
   "resourceType": "GMSound",
 }
