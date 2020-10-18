@@ -124,6 +124,8 @@ dash_attack = function ()
 		sprite_index = sprite.dodge;
 		image_speed = 1.4;
 		var _i = instance_create_layer(x,y,"FX", smoke_burst);
+		_i = choose(v_hit3, v_hit4, v_hit5, v_hit6, v_hit7, v_hit8, v_hit9);
+		audio_play_sound(_i,50,0);
 		
 		audio_play_sound(s_engine_dodge, 100, 0);
 	}
