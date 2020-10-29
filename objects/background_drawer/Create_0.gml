@@ -6,7 +6,7 @@ background = function(_sprite, _xpercent, _ypercent) constructor
 {
 	sprite = _sprite;
 	xoffset = 0;
-	yoffset = -(1500-270);
+	yoffset = -(1500 - 270);
 	percent_x = _xpercent;
 	percent_y = _ypercent;
 }

@@ -51,7 +51,11 @@ function load_data()
 			global.sound_toggle = ini_read_real("Config", "SoundToggle", true);
 		
 			ini_close();
+			
+			
 		}
+		
+		return 0;
 	}
 	else
 	{

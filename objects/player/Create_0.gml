@@ -1,5 +1,6 @@
 /// @description Insert description here
 score = 0;
+health = 0;
 // player data
 is_position_snapped = false;
 target_x = x;
@@ -108,6 +109,7 @@ move_dodge = function ()
 		image_speed = 1.4;
 		var _i = instance_create_layer(x,y,"FX", smoke_burst);
 		audio_play_sound(s_engine_dodge, 100, 0);
+		return 0;
 	}
 	else
 	{
@@ -128,6 +130,8 @@ dash_attack = function ()
 		audio_play_sound(_i,50,0);
 		
 		audio_play_sound(s_engine_dodge, 100, 0);
+		
+		return 0;
 	}
 	else
 	{
